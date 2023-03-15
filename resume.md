@@ -23,47 +23,109 @@
 ## スキル
 ---
 ### フロントエンド(HTML/CSS/Javascript)
+#### Javascriptフレームワーク
 * Next.js：半年
 * Vue.js：半年
 * Angular7：1年
 * AngularJS(1.6)：1年
+#### CSSフレームワーク
 * Tailwind：半年
 * Bootstrap：2年
-Cc* CSSプリプロセッサはSassとLess、CSSフレームワークはTailwind、Bootstrapの
-* Vue.jsを半年程度、Angular(7)を1年、AngularJS(1.6)を1年半ほど使用した開発経験があります。
-### フロントエンド（テストツール）
+#### CSSプリプロセッサ
+* Sass：2年
+* Less：1年
+#### テスト
 * jest：半年
 * Selenium Webdriver：1年
-### Node.js
-* WEBシステムのAPIサーバ開発でExpressを使用した開発経験が3年ほどあります。
-### Java
-* Java8、テンプレートエンジンにThymeleafを使用しての開発経験：2年
-* JSP、Beansを利用したMVCでの開発経験があります。
-* 他社が開発したSpringフレームワークを使用したWebアプリケーションを引き継ぎ、解析、改修を行った経験があります。
-* Selenium WebDriverを使用した自動テストスクリプトの開発も行っていました。
-### Kotlin
-* サーバサイドKotlinでWEBアプリケーションの開発を行っています。
-### C#
-* Webサーバ開発とネイティブアプリ開発で半年程度の開発実績があります。
-* C/C++で記述されたアンマネージドコードとの連携なども行ったことがあります。
-### C/C++
-* CNCシミュレータアプリ開発のエンジン部分で利用した実績があります。
-* 開発実績は少ないですが、学生時代のメイン使用言語だったこともありポインタ、構造体、共用体といった基本知識は身につけております。
-### Python
-* 簡易OCRや簡易ファイルアップローダなど簡単なツール開発で利用した実績があります。
-### その他ツール等
-* Docker
-* Nginx、IIS
-* Jenkins
-* Git、Subversion
+### サーバサイド
+* Node.js: 3年以上
+* Java：3年以上
+  * JSP：1年
+  * Thymeleaf：2年
+* Kotlin：1年
+  * サーバサイドKotlinでWEBアプリケーションの開発を行っています。
+* C#：半年
+  * Webサーバ開発
+  * ネイティブアプリ開発
+* C/C++：半年
+* Python：数ヶ月程度
+### データベース
+* PostgreSQL：3年
+* Oracle：2年
+### その他
+#### クラウドコンピューティング
+* AWS：2年
+* GCP：2年
+#### コンテナ
+* Docker：3年以上
+* Kubernetes：2年
+#### WEBサーバ
+* Tomcat：2年
+* Nginx：2年
+#### CI/CD
+* Jenkins：3年以上
+* Code Pipeline, Code Build, Code Deploy：半年
+* GitHub Actions：1年
+#### VCS
+* Git：5年以上
+* GitHub：3年以上
+* Subversion：2年
 
 <div style="page-break-before:always"></div>
 
 ## 職務経歴
 ---
+### ユーザ用管理ポータルサイトのリプレイス
+* 開発期間  
+2022年12月〜
+
+* 開発規模  
+人数：計6名（スクラムマスター、開発メンバー4名、SRE1名）  
+担当：開発メンバー  
+
+* 開発環境  
+フロントエンド：React、Next.js、TailwindCSS  
+BFF：Node.js
+サーバサイド：Kotlin
+データベース：Oracle  
+VCS：GitHub  
+インフラ：AWS(ECS)  
+CI/CD：GitHub Actions、CodePipeline、CodeBuild、CodeDeploy
+
+* 開発内容  
+他社で開発・保守されていたユーザ用管理ポータルサイトを自社管理にするためのリプレイスプロジェクト  
+オンプレ・PerlからAWS・Next.js・Kotlinへの移行のため、フルスクラッチでの開発  
+アプリケーション開発からCI/CD環境の整備までフルスタックで開発を行っています。  
+
+### Kubernetesインフラの整備
+* 開発期間  
+2020年12月〜
+
+* 開発規模  
+人数：計5名  
+
+* 開発環境  
+実行環境：Google Kubernetes Engine  
+VCS：GitHub  
+インフラ：GCP  
+CI/CD：GitHub Actions、Terraform / Terraform Cloud  
+ミドルウェア
+  * GitOpsCDツール：flux
+  * ワークフローエンジン：argo-workflow
+  * 証明書管理：cert-manager
+  * 設定構成管理：config-sync
+  * データ解析：datadog
+  * ロギング：fluentbit  
+
+* 開発内容
+SREのサポートメンバーとして参画  
+AWSで動作していたアプリケーションをKubernetesインフラに移行するための、Kubernetesインフラの構築・整備を実施  
+cert-managerの導入やロギング周りの設計、構築  
+現在は移行完了したため、ミドルウェアのバージョン管理等を担当  
+
 ### 自社通販サイトの開発・運用
 * 開発期間  
-2020年9月〜2020年11月（現在参画中）
+2020年9月〜2022年11月
 
 * 開発規模  
 人数：計11名（スクラムマスター、フロントチーム3名、サーバチーム7名）  
@@ -77,6 +139,34 @@ Webサーバ：tomcat、nginx
 データベース：Oracle、PostgreSQL  
 VCS：GitHub  
 その他：AWS(EC2)、Jenkins
+
+* 開発内容  
+年間売上100億円を超える自社ECサイトの保守・開発  
+売上向上を狙うための新機能開発を主に担当。  
+主な開発実績  
+  * ポイント値引き機能
+  * 作者関連作品のレコメンド機能
+  * 外部サイト埋め込み用ウィジェットの開発　等
+
+### 社内図書貸出管理ツールの開発（研修）
+* 開発期間  
+2020年8月
+
+* 開発規模  
+自分のみ
+
+* 開発環境  
+対象OS：Linux  
+フロントエンド：Thymeleaf
+サーバサイド：Kotlin、Ktor  
+Webサーバ：tomcat、nginx  
+データベース：PostgreSQL  
+VCS：GitHub  
+その他：AWS(EC2)、Jenkins
+
+* 開発内容  
+スプレッドシートで行っていた社内図書の貸出情報をWEBアプリケーション化  
+入社時研修課題として一人で開発  
 
 ### 研削盤向けIoTWebアプリケーション開発
 * 開発期間  
